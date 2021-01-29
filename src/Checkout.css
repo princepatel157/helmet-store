@@ -12,7 +12,8 @@
   margin-left: 20px;
 }
 .checkout_left {
-  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .checkout_title {
   margin-right: 10px;

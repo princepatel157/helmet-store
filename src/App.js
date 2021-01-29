@@ -4,6 +4,7 @@ import Header from "./Header.js";
 import Navbar from "./Navbar.js";
 import Home from "./Home.js";
 import Checkout from "./Checkout.js";
+import Footer from "./Footer.js";
 // import Checkout from "./Checkout.js";
 // import "./App.css";
 
@@ -18,13 +19,14 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            {/* <Route path="/checkout">
-              <Checkout />
-            </Route>  */}
             <Route path="/checkout">
               <Checkout />
             </Route>
+            <Route path="/cart">
+              <h1>cart</h1>
+            </Route>
           </Switch>
+          <Footer />
         </div>
       </BrowserRouter>
     </>

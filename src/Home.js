@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import Product from "./Product.js";
-import HelmetCat1 from "./ProductItems.js";
+import Items from "./ProductItems.js";
 
 function Home() {
   return (
@@ -80,7 +80,7 @@ function Home() {
       </div> */}
       <div className="container row1">
         <div className="row">
-          {HelmetCat1.map((val) => {
+          {Items.map((val) => {
             return (
               <Product name={val.name} image={val.image} price={val.price} />
             );
