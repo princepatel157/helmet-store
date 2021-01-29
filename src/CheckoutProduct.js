@@ -15,7 +15,7 @@ function CheckoutProduct(props) {
 
   return (
     <div className="checkoutProduct">
-      <img className="checkoutProduct_image" src={props.image} />
+      <img className="checkoutProduct_image" src={props.image[0]} />
       <div className="checkoutProduct_info">
         <p className="checkoutProduct_title">{props.name}</p>
         <p className="checkoutProduct_price">

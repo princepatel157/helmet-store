@@ -69,7 +69,7 @@
 .product_cat_bar {
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: #0b1d58;
 }
 .product_cat {
