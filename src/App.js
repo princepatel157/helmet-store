@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./Header.js";
 import Navbar from "./Navbar.js";
 import Home from "./Home.js";
+import Checkout from "./Checkout.js";
 // import Checkout from "./Checkout.js";
 // import "./App.css";
 
@@ -20,8 +21,8 @@ function App() {
             {/* <Route path="/checkout">
               <Checkout />
             </Route>  */}
-            <Route path="/cart">
-              <h2>cart page</h2>
+            <Route path="/checkout">
+              <Checkout />
             </Route>
           </Switch>
         </div>

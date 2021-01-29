@@ -17,7 +17,8 @@ const Poduct = (props) => {
           <img src={props.image} alt="" />
         </div>
         <div className="product_info">{props.name}</div>
-        <div className="product_price">{props.price}</div>
+        <div className="product_price">Rs. {props.price}</div>
+        <button className="btn add_btn">Add to Basket</button>
       </div>
     </>
   );
