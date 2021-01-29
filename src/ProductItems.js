@@ -2,7 +2,12 @@ const HelmetCat1 = [
   {
     id: 1,
     name: "ASHI High Class Performance Titanium",
-    image: "./images/product/helmet1.jpg",
+    image: [
+      "./images/product/helmet1.jpg",
+      "./images/product/helmet1.2.jpg",
+      "./images/product/helmet1.3.jpg",
+      "./images/product/helmet1.4.jpg",
+    ],
     price: 12999,
   },
   {
