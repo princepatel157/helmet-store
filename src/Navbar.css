@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   position: sticky;
+  /* border-bottom: 1px solid black; */
 }
 .navbar_logo {
   width: 60px;

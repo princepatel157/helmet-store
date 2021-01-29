@@ -5,8 +5,8 @@ import Navbar from "./Navbar.js";
 import Home from "./Home.js";
 import Checkout from "./Checkout.js";
 import Footer from "./Footer.js";
-// import Checkout from "./Checkout.js";
-// import "./App.css";
+import Login from "./Login.js";
+import "./App.css";
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
             <Route path="/checkout">
               <Checkout />
             </Route>
-            <Route path="/cart">
-              <h1>cart</h1>
+            <Route path="/login">
+              <Login />
             </Route>
           </Switch>
           <Footer />

@@ -14,7 +14,7 @@ function Header() {
 
       {/* user registration */}
       <div className="header_nav">
-        <Link to="/" className="header_links">
+        <Link to="/login" className="header_links">
           <div className="header_option">
             <span>Sign In</span>
           </div>
