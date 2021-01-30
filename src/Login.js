@@ -44,7 +44,7 @@ function Login() {
         </Link> */}
 
         <div className="login_container">
-          <h1>Sign-in</h1>
+          <h1>Log-in or Register</h1>
           <form>
             <h5>E-mail</h5>
             <input
@@ -68,9 +68,7 @@ function Login() {
               Sign In
             </button>
           </form>
-
-          <p>By signing-in you agree to the Terms and Conditions.</p>
-
+          <h6>Or Register yourself</h6>
           <button onClick={register} className="login_registerButton">
             Create your Account
           </button>

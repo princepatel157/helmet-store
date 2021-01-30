@@ -24,7 +24,7 @@ function Navbar() {
         <Link to="/orders" className="navbar_links">
           <div className="navbar_option">From Executive</div>
         </Link>
-        <Link to="/orders" className="navbar_links">
+        <Link to="/aboutus" className="navbar_links">
           <div className="navbar_option">About Us</div>
         </Link>
       </div>
