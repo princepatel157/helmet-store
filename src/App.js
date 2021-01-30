@@ -7,6 +7,7 @@ import Checkout from "./Checkout.js";
 import Footer from "./Footer.js";
 import Login from "./Login.js";
 import AboutUs from "./AboutUs";
+import AllProduct from "./AllProduct.js";
 import "./App.css";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -52,6 +53,9 @@ function App() {
             </Route>
             <Route path="/aboutus">
               <AboutUs />
+            </Route>
+            <Route path="/allproduct">
+              <AllProduct />
             </Route>
             <Route path="/login">
               <Login />

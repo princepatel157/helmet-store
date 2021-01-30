@@ -3,6 +3,7 @@ import "./Home.css";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import Product from "./Product.js";
 import { Helmets, Acc } from "./ProductItems.js";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -18,7 +19,9 @@ function Home() {
                 <br /> are often just an illusion.
               </h2>
               <div className=" home_btn">
-                <button className="btn btn-primary btn1">Buy Now</button>
+                <Link to="/allproduct">
+                  <button className="btn btn-primary btn1">Buy Now</button>
+                </Link>
                 <button className="btn btn-success btn2 ">Offers</button>
               </div>
             </div>
@@ -73,11 +76,31 @@ function Home() {
       </div>
       <div className="container row1">
         <div className="row">
-          {Helmets.map((val) => {
-            return (
-              <Product name={val.name} image={val.image} price={val.price} />
-            );
-          })}
+          <Product
+            name={Helmets[0].name}
+            image={Helmets[0].image}
+            price={Helmets[0].price}
+          />
+          <Product
+            name={Helmets[1].name}
+            image={Helmets[1].image}
+            price={Helmets[1].price}
+          />
+          <Product
+            name={Helmets[2].name}
+            image={Helmets[2].image}
+            price={Helmets[2].price}
+          />
+          <Product
+            name={Helmets[3].name}
+            image={Helmets[3].image}
+            price={Helmets[3].price}
+          />
+          <Product
+            name={Helmets[4].name}
+            image={Helmets[4].image}
+            price={Helmets[4].price}
+          />
         </div>
       </div>
       {/* products -accessories*/}
@@ -90,11 +113,31 @@ function Home() {
       </div>
       <div className="container row1">
         <div className="row">
-          {Acc.map((val) => {
-            return (
-              <Product name={val.name} image={val.image} price={val.price} />
-            );
-          })}
+          <Product
+            name={Acc[0].name}
+            image={Acc[0].image}
+            price={Acc[0].price}
+          />
+          <Product
+            name={Acc[1].name}
+            image={Acc[1].image}
+            price={Acc[1].price}
+          />
+          <Product
+            name={Acc[2].name}
+            image={Acc[2].image}
+            price={Acc[2].price}
+          />
+          <Product
+            name={Acc[3].name}
+            image={Acc[3].image}
+            price={Acc[3].price}
+          />
+          <Product
+            name={Acc[4].name}
+            image={Acc[4].image}
+            price={Acc[4].price}
+          />
         </div>
       </div>
     </>
