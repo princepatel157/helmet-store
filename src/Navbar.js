@@ -15,13 +15,13 @@ function Navbar() {
 
       {/* navlinks */}
       <div className="navbar_nav">
-        <Link to="/" className="navbar_links">
+        <Link to="/helmets" className="navbar_links">
           <div className="navbar_option">Cricket Helmet</div>
         </Link>
-        <Link to="/orders" className="navbar_links">
+        <Link to="/accessories" className="navbar_links">
           <div className="navbar_option">Accessories</div>
         </Link>
-        <Link to="/orders" className="navbar_links">
+        <Link to="#" className="navbar_links">
           <div className="navbar_option">From Executive</div>
         </Link>
         <Link to="/aboutus" className="navbar_links">
