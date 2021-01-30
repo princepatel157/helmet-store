@@ -58,7 +58,7 @@ function Home() {
             <div className="col-lg-4 ">
               <img
                 className="home_img"
-                src="./images/kohli.png"
+                src="./images/helpng.png"
                 alt="no image"
               />
             </div>
