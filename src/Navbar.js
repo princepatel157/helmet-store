@@ -5,7 +5,7 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { useStateValue } from "./StateProvider";
 
 function Navbar() {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   return (
     <nav className="navbar">
       {/* logo*/}
