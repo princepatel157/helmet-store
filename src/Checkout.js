@@ -13,10 +13,10 @@ function Checkout() {
       </div>
       <div className="container checkout">
         <div className="row">
-          <div className="col-lg-4 checkout_right">
+          <div className="col-lg-4 col-xs-12 checkout_right">
             <Subtotal />
           </div>
-          <div className="col-lg-6 checkout_left">
+          <div className="col-lg-6 col-xs-12 checkout_left">
             <div className="checkout_heading">
               <h5 className="checkout_user">Hello, {user?.email}</h5>
               <h2 className="checkout_title">Your Shopping Basket</h2>

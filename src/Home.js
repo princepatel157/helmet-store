@@ -2,9 +2,8 @@ import React from "react";
 import "./Home.css";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import Product from "./Product.js";
-import { Helmets, Acc } from "./ProductItems.js";
+import Items from "./ProductItems.js";
 import { Link } from "react-router-dom";
-
 function Home() {
   return (
     <>
@@ -83,29 +82,44 @@ function Home() {
       <div className="container row1">
         <div className="row align-items-center">
           <Product
-            name={Helmets[0].name}
-            image={Helmets[0].image}
-            price={Helmets[0].price}
+            name={Items[0].name}
+            image={Items[0].image}
+            id={Items[0].id}
+            size={Items[0].size}
+            color={Items[0].colors}
+            price={Items[0].price}
           />
           <Product
-            name={Helmets[1].name}
-            image={Helmets[1].image}
-            price={Helmets[1].price}
+            name={Items[1].name}
+            image={Items[1].image}
+            id={Items[1].id}
+            size={Items[1].size}
+            color={Items[1].colors}
+            price={Items[1].price}
           />
           <Product
-            name={Helmets[2].name}
-            image={Helmets[2].image}
-            price={Helmets[2].price}
+            name={Items[2].name}
+            image={Items[2].image}
+            id={Items[2].id}
+            size={Items[2].size}
+            color={Items[2].colors}
+            price={Items[2].price}
           />
           <Product
-            name={Helmets[3].name}
-            image={Helmets[3].image}
-            price={Helmets[3].price}
+            name={Items[3].name}
+            image={Items[3].image}
+            id={Items[3].id}
+            size={Items[3].size}
+            color={Items[3].colors}
+            price={Items[3].price}
           />
           <Product
-            name={Helmets[4].name}
-            image={Helmets[4].image}
-            price={Helmets[4].price}
+            name={Items[4].name}
+            image={Items[4].image}
+            id={Items[5].id}
+            size={Items[5].size}
+            color={Items[5].colors}
+            price={Items[4].price}
           />
         </div>
       </div>
@@ -120,29 +134,44 @@ function Home() {
       <div className="container row1">
         <div className="row">
           <Product
-            name={Acc[0].name}
-            image={Acc[0].image}
-            price={Acc[0].price}
+            name={Items[17].name}
+            image={Items[17].image}
+            id={Items[17].id}
+            size={Items[17].size}
+            color={Items[17].colors}
+            price={Items[17].price}
           />
           <Product
-            name={Acc[1].name}
-            image={Acc[1].image}
-            price={Acc[1].price}
+            name={Items[18].name}
+            image={Items[18].image}
+            id={Items[18].id}
+            size={Items[18].size}
+            color={Items[18].colors}
+            price={Items[18].price}
           />
           <Product
-            name={Acc[2].name}
-            image={Acc[2].image}
-            price={Acc[2].price}
+            name={Items[19].name}
+            image={Items[19].image}
+            id={Items[19].id}
+            size={Items[19].size}
+            color={Items[19].colors}
+            price={Items[19].price}
           />
           <Product
-            name={Acc[3].name}
-            image={Acc[3].image}
-            price={Acc[3].price}
+            name={Items[20].name}
+            image={Items[20].image}
+            id={Items[20].id}
+            size={Items[20].size}
+            color={Items[20].colors}
+            price={Items[20].price}
           />
           <Product
-            name={Acc[4].name}
-            image={Acc[4].image}
-            price={Acc[4].price}
+            name={Items[21].name}
+            image={Items[21].image}
+            id={Items[21].id}
+            size={Items[21].size}
+            color={Items[21].colors}
+            price={Items[21].price}
           />
         </div>
       </div>

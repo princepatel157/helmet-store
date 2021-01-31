@@ -10,6 +10,7 @@ import AboutUs from "./AboutUs";
 import AllProduct from "./AllProduct.js";
 import Helmets from "./Helmets.js";
 import Accessories from "./Accessories.js";
+import ProductDetail from "./ProductDetail.js";
 import "./App.css";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -64,6 +65,9 @@ function App() {
             </Route>
             <Route path="/accessories">
               <Accessories />
+            </Route>
+            <Route path="/productdetail/:id">
+              <ProductDetail />
             </Route>
             <Route path="/login">
               <Login />
