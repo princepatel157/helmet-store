@@ -740,7 +740,7 @@ const Items = [
     name: "Nut Pack(4)",
     size: ["One Size"],
     colors: ["Grey"],
-    image: ["./images/product/acc11.1.jpg", "./images/product/acc11.1.jpg"],
+    image: ["/images/product/acc11.1.jpg", "/images/product/acc11.1.jpg"],
     price: 65,
     desc: [],
     comp: [],

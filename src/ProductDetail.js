@@ -15,12 +15,12 @@ const ProductDetail = (props) => {
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
-        id: Items[id].id,
-        price: Items[id].price,
-        name: Items[id].name,
-        size: Items[id].size,
-        colors: Items[id].colors,
-        image: Items[id].image,
+        id: Items[id - 1].id,
+        price: Items[id - 1].price,
+        name: Items[id - 1].name,
+        size: Items[id - 1].size,
+        colors: Items[id - 1].colors,
+        image: Items[id - 1].image,
       },
     });
   };
@@ -34,15 +34,15 @@ const ProductDetail = (props) => {
         <div className="row align-items-center">
           <div className="col-lg-4 col-xs-12 prod_img">
             <div className="big_img">
-              <img src={Items[id].image[0]} alt="" />
+              <img src={Items[id - 1].image[0]} alt="" />
             </div>
 
             <div className="container sub_img_container">
               <div className="row">
                 <div className="col-lg-4 col-xs-12 sub_img">
-                  <img src={Items[id].image[1]} alt="" />
-                  <img src={Items[id].image[2]} alt="" />
-                  <img src={Items[id].image[3]} alt="" />
+                  <img src={Items[id - 1].image[1]} alt="" />
+                  <img src={Items[id - 1].image[2]} alt="" />
+                  <img src={Items[id - 1].image[3]} alt="" />
                 </div>
               </div>
             </div>

@@ -99,6 +99,14 @@ const CatProduct = () => {
             color={Items[25].colors}
             price={Items[25].price}
           />
+          <Product
+            name={Items[26].name}
+            image={Items[26].image}
+            id={Items[26].id}
+            size={Items[26].size}
+            color={Items[26].colors}
+            price={Items[26].price}
+          />
         </div>
       </div>
     </>
