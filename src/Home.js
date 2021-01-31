@@ -13,22 +13,28 @@ function Home() {
         <div className="row">
           {/* sub_home */}
           <div className="col-xs-12 sub_home">
-            <div className="col-lg-6 sub_home_text">
+            <div className="col-lg-5 col-lg-offset-1 sub_home_text">
               <h2>
                 Never say never <br /> because limits,like fears,
                 <br /> are often just an illusion.
               </h2>
-              <div className=" home_btn">
+              <div className="home_btn">
                 <Link to="/allproduct">
-                  <button className="btn btn-primary btn1">Buy Now</button>
+                  <button type="button" className="btn btn-primary btn1">
+                    Buy Now
+                  </button>
                 </Link>
                 <button className="btn btn-success btn2 ">Offers</button>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          {/* home left */}
-          <div className="col-xs-6 home_left">
+      {/* level-2 home left */}
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-xs-12 col-lg-5 home_left col-lg-offset-1">
             <div className="cards">
               <div className="well">
                 <div className="card_icon">
@@ -54,7 +60,7 @@ function Home() {
           </div>
 
           {/* home right */}
-          <div className="home_right hidden-sm">
+          <div className="home_right visible-lg">
             <div className="col-lg-4 ">
               <img
                 className="home_img"
@@ -68,14 +74,14 @@ function Home() {
 
       {/* products -helmets*/}
       <div className="container product_cat_bar">
-        <div className="row">
-          <div className="col-xs-12 ">
+        <div className="row align-items-center">
+          <div className="col-xs-4 col-xs-offset-5">
             <div className="product_cat">HELMET COLLECTIONS</div>
           </div>
         </div>
       </div>
       <div className="container row1">
-        <div className="row">
+        <div className="row align-items-center">
           <Product
             name={Helmets[0].name}
             image={Helmets[0].image}
@@ -105,8 +111,8 @@ function Home() {
       </div>
       {/* products -accessories*/}
       <div className="container product_cat_bar">
-        <div className="row">
-          <div className="col-xs-12 ">
+        <div className="row align-items-center">
+          <div className="col-xs-4 col-xs-offset-5">
             <div className="product_cat">ACCESSORIES</div>
           </div>
         </div>

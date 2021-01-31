@@ -1,4 +1,4 @@
-.header {
+/* .header {
   height: 30px;
   background-color: #131921;
   display: flex;
@@ -9,8 +9,6 @@
   margin-left: 100px;
   display: flex;
   flex: 1;
-  /* margin-right: 10px; */
-  /* align-items: flex-end; */
   align-items: center;
 }
 .header_searchbar {
@@ -33,7 +31,11 @@
 }
 .header_option {
   display: flex;
-  /* flex-direction: column; */
   margin-left: 10px;
   margin-right: 10px;
+} */
+
+.header_links {
+  color: white;
+  text-decoration: none;
 }

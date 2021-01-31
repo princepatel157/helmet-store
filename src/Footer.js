@@ -14,9 +14,9 @@ function Footer() {
           {/* upper container */}
           <div className="container-fluid">
             <div className="row">
-              <div className="footer_up">
+              <div className=" col-xs-12 footer_up">
                 {/* footer left */}
-                <div className="col-lg-4 col-sm-2 footer_left">
+                <div className="col-lg-4 col-xs-12 footer_left">
                   <div className="footer_img">
                     <img src="./images/logo.jpg" />
                   </div>
@@ -32,7 +32,7 @@ function Footer() {
                 </div>
 
                 {/* footer right */}
-                <div className="col-lg-8 col-sm-10 footer-right">
+                <div className="col-lg-8 col-xs-12 footer-right">
                   <div className="container-fluid">
                     <div className="row">
                       <div className="col-xs-4 block">
@@ -42,7 +42,7 @@ function Footer() {
                         <div className="block_content">
                           <ul>
                             <li>
-                              <Link to="/">About Us</Link>
+                              <Link to="/aboutus">About Us</Link>
                             </li>
                             <li>
                               <Link to="/">Privacy Policy</Link>
@@ -90,8 +90,6 @@ function Footer() {
                           Tirupati Industrial Area, <br />
                           Delhi Road, Meerut <br />- 250103 (U.P.) India.
                           <br /> PH: +919897278902, 01214050604
-                          <br />
-                          EMAIL: ashisports@ashihelmet.com
                         </div>
                       </div>
                     </div>

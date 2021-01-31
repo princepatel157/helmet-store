@@ -1,19 +1,17 @@
 .footer {
   position: sticky;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: #363435;
   color: white;
   text-align: center;
   margin-top: 50px;
+  padding-bottom: 50px;
 }
 .footer_up {
   margin-top: 30px;
   width: 100%;
   height: max-content;
   margin-bottom: 30px;
-  display: flex;
+  /* display: flex; */
 }
 .footer_left {
   display: flex;
@@ -28,6 +26,10 @@
 }
 .social_links > button {
   margin: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 2px;
+  background-color: #363435;
 }
 .block {
   padding-top: 15px;
@@ -35,16 +37,17 @@
   flex-direction: column;
 }
 .block_content {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   color: rgb(207, 203, 203);
+}
+.block_head {
+  align-items: center;
 }
 .block_content > ul > li {
   list-style: none;
 }
 
-.block {
+/* .block {
   margin-left: 80px;
   margin-right: 20px;
-}
+} */

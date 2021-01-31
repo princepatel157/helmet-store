@@ -19,7 +19,7 @@ const Product = (props) => {
   };
   return (
     <>
-      <div className="col-lg-2 product">
+      <div className="col-lg-4 col-sm-6 col-xs-12 product">
         <div className="product_img">
           <img src={props.image[0]} alt="" />
         </div>

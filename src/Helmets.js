@@ -11,9 +11,9 @@ const CatProduct = () => {
       </div>
       {/* products -helmets*/}
       <div className="container product_cat_bar">
-        <div className="row">
-          <div className="col-xs-12 ">
-            <div className="product_cat">HELMET COLLECTIONS</div>
+        <div className="row align-items-center">
+          <div className="col-xs-4 col-xs-offset-5">
+            <div className="product_cat">HELMETS</div>
           </div>
         </div>
       </div>

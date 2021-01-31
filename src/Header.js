@@ -15,29 +15,46 @@ function Header() {
   };
 
   return (
-    <nav className="header">
-      {/* search bar */}
-      <div className="header_search">
-        <input type="text" className="header_searchbar" />
-        <SearchIcon className="header_searchicon" />
-      </div>
+    <>
+      {/* bootstrap navbar */}
+      <nav class="navbar navbar-inverse header">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#headerlinks"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
-      {/* user registration */}
-      <div className="header_nav">
-        <Link to={!user && "/login"} className="header_links">
-          <div onClick={handleAuthenticaton} className="header_option">
-            <span>{user ? "Sign Out" : "Sign In"}</span>
+          <div class="collapse navbar-collapse" id="headerlinks">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <Link to={!user && "/login"} classNameName="header_links">
+                  <div
+                    onClick={handleAuthenticaton}
+                    classNameName="header_option"
+                  >
+                    <span>{user ? "Sign Out" : "Sign In"}</span>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link to={!user && "/login"} classNameName="header_links">
+                  <div classNameName="header_option">
+                    <span>{!user ? "Register" : user.email}</span>
+                  </div>
+                </Link>
+              </li>
+            </ul>
           </div>
-        </Link>
-      </div>
-      <div className="header_nav">
-        <Link to={!user && "/login"} className="header_links">
-          <div className="header_option">
-            <span>{!user ? "Register" : user.email}</span>
-          </div>
-        </Link>
-      </div>
-    </nav>
+        </div>
+      </nav>
+    </>
   );
 }
 
