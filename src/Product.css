@@ -9,7 +9,8 @@
   margin-top: 50px;
   margin-bottom: 20px;
   /* margin-bottom: 20px; */
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(234, 247, 247);
 }
 
 .product:hover {
@@ -37,6 +38,7 @@
 .product_price {
   text-align: center;
   color: green;
+  font-weight: 500;
 }
 .product > button {
   background-color: #f0c14b;

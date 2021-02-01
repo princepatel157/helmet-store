@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import "./ProductDetail.css";
 import Items from "./ProductItems.js";
 import { useParams } from "react-router-dom";
@@ -7,6 +7,15 @@ import { Link } from "react-router-dom";
 
 const ProductDetail = (props) => {
   const { id } = useParams();
+
+  const [curr_size, newSize] = useState(Items[id - 1].size[1]);
+  function updateSize(e) {
+    newSize(e.target.value);
+  }
+  const [curr_color, newColor] = useState(Items[id - 1].colors[1]);
+  function updateColor(e) {
+    newColor(e.target.value);
+  }
 
   const [{ basket }, dispatch] = useStateValue();
 
@@ -18,8 +27,8 @@ const ProductDetail = (props) => {
         id: Items[id - 1].id,
         price: Items[id - 1].price,
         name: Items[id - 1].name,
-        size: Items[id - 1].size,
-        colors: Items[id - 1].colors,
+        size: curr_size,
+        colors: curr_color,
         image: Items[id - 1].image,
       },
     });
@@ -50,30 +59,47 @@ const ProductDetail = (props) => {
           {/* product details */}
           <div className="col-lg-7 col-lg-offset-1 col-xs-12 prod_details">
             <div className="prod_head">
+              {/* name and price */}
               <h3>{Items[id - 1].name}</h3>
               <h4>Rs. {Items[id - 1].price}</h4>
             </div>
             <hr />
+
+            {/* color */}
             <div className="prod_color">
-              <h5>Colors</h5>
-              {Items[id - 1].colors.map((val) => {
-                return (
-                  <button
-                    style={{ color: { val } }}
-                    className="btn prod_color_btn"
-                    value={val}
-                  >
-                    {val}
-                  </button>
-                );
-              })}
+              {/* <h5>Colors</h5> */}
+              <div class="form-group">
+                <label for="sel1">Select Color:</label>
+                <select
+                  defaultValue={curr_color}
+                  onChange={updateColor}
+                  class="form-control"
+                  id="color"
+                >
+                  {Items[id - 1].colors.map((val) => {
+                    return <option>{val}</option>;
+                  })}
+                </select>
+              </div>
 
               <div className="prod_size">
-                <h5>Size</h5>
-                {Items[id - 1].size.map((val) => {
-                  return <button>{val}</button>;
-                })}
+                {/* <h5>Size</h5> */}
+                <div class="form-group">
+                  <label for="sel1">Select Size:</label>
+                  <select
+                    defaultValue={curr_size}
+                    onChange={updateSize}
+                    class="form-control"
+                    id="sel1"
+                  >
+                    {Items[id - 1].size.map((val) => {
+                      return <option>{val}</option>;
+                    })}
+                  </select>
+                </div>
               </div>
+
+              {/* add to basket button */}
             </div>
             <div className="prod_btn">
               <button className="btn add_btn" onClick={addToBasket}>
@@ -81,6 +107,7 @@ const ProductDetail = (props) => {
               </button>
             </div>
 
+            {/* description */}
             <div className="prod_desc">
               <hr />
               <h3>Item Details</h3>

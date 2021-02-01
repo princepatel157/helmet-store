@@ -26,6 +26,8 @@ function Checkout() {
                     id={item.id}
                     name={item.name}
                     image={item.image}
+                    colors={item.colors}
+                    size={item.size}
                     price={item.price}
                   />
                 ))}

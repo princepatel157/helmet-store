@@ -11,6 +11,7 @@ import AllProduct from "./AllProduct.js";
 import Helmets from "./Helmets.js";
 import Accessories from "./Accessories.js";
 import ProductDetail from "./ProductDetail.js";
+import Payment from "./Payment.js";
 import "./App.css";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
@@ -71,6 +72,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/payment">
+              <Payment />
             </Route>
           </Switch>
           <Footer />

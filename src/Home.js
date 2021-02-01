@@ -74,7 +74,7 @@ function Home() {
       {/* products -helmets*/}
       <div className="container product_cat_bar">
         <div className="row align-items-center">
-          <div className="col-xs-4 col-xs-offset-5">
+          <div className="col-xs-4 col-xs-offset-4">
             <div className="product_cat">HELMET COLLECTIONS</div>
           </div>
         </div>
